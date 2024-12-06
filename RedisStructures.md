@@ -16,6 +16,6 @@ with the member being the player id and the score being the stat value. This not
         ```ZINCRBY "stat|pitcher|wins|2015" 1 "1"```
     - Delete:
         - Remove a stat in the set: ```ZREM "stat|pitcher|wins|2015" "1"```
-        - Delete the entire stat set: ```DEL "stat|pitcher|wins|2015" "1"```
+        - Delete the entire stat set: ```DEL "stat|pitcher|wins|2015"```
 
 This is applicable to all statistics and years, just by creating a new sorted set with new values.
